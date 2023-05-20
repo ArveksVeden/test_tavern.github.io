@@ -57,15 +57,33 @@
   }
   
   .images {
-   display: flex;
-   justify-content: space-around;
-   margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .images img {
+    width: 30%;
+    height: auto;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
   }
   
-  .images img {
-   width: 30%;
-   height: auto;
+  .images img:hover {
+    transform: scale(1.2);
   }
+
+  @media (max-width: 768px) {
+    .images img {
+      width: 45%;
+    }
+  }
+  
  </style>
 </head>
 <body>
@@ -81,11 +99,19 @@
   </ol>
   <p>После выполнения этих шагов ваш сайт будет доступен по адресу username.github.io/repository_name</p>
   <div class="images">
-   <img src="https://dummyimage.com/600x400/000/fff&text=Image+1" alt="Image 1">
-   <img src="https://dummyimage.com/600x400/000/fff&text=Image+2" alt="Image 2">
-   <img src="https://dummyimage.com/600x400/000/fff&text=Image+3" alt="Image 3">
+    <h2>Примеры сайтов, созданных на GitHub Pages:</h2>
+    <a href="first_image.png" target="_blank"><img src="first_image.png" alt="Example 1"></a>
+    <p>Создание нового репозитория</p>
+    <a href="second_image.png" target="_blank"><img src="second_image.png" alt="Example 2"></a>
+    <p>Настройки нового репозитория >> Pages</p>
+    <a href="fird_image.png" target="_blank"><img src="fird_image.png" alt="Example 3"></a>
+    <p>Добавление файлов в репозиторий</p>
+    <a href="fourth_image.png" target="_blank"><img src="fourth_image.png" alt="Example 4"></a>
+    <p>Отображение файлов проекта в репозитории</p>
+    <a href="fifth_image.PNG" target="_blank"><img src="fifth_image.PNG" alt="Example 5"></a>
+    <p>Пример 5. Сайт-резюме</p>
+    <a href="sixth_image.png" target="_blank"><img src="second_image.png" alt="Example 6"></a>
+    <p>Пример 6. Сайт-сообщество</p>
   </div>
-  <a href="https://pages.github.com/" class="btn">Перейти на сайт GitHub Pages</a>
- </div>
 </body>
 </html>
