@@ -1,2 +1,1 @@
-# test_tavern.github.io
-test tavern zone
+Тестовый репозиторий для урока информатики 20|05|2023
